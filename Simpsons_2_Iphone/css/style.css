@@ -1,0 +1,258 @@
+/*******************GENERAL******************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 208, 0);
+}
+
+.wrapper {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+@media only screen and (max-device-width:480px) {
+    .wrapper {
+        width: 100%;
+
+    }
+
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    white-space: nowrap;
+}
+
+@media only screen and (max-device-width:480px) {
+    a {
+        font-size: 0.6em;
+
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/********************HEADER*******************/
+
+header h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+header figure {
+    width: 100%;
+    height: 40em;
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width:480px) {
+    header figure {
+        height: 10em;
+
+    }
+
+}
+
+header figure img {
+    width: 120%;
+    position: absolute;
+    top: -80%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width:480px) {
+    header figure img {
+        top: -40%;
+    }
+
+}
+
+/*****NAV*****/
+
+header nav ul {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/********************MAIN*************************/
+
+main {
+    border-top: 2px dashed black;
+    margin: 0 20px;
+}
+
+
+main h1 {
+    color: rgb(255, 208, 0);
+    margin: 25px 0;
+}
+
+.contenu {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
+
+}
+
+
+/*** TEXTE SIMPSONS ***/
+
+.presentation {
+    width: 80em;
+}
+
+.presentation p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-device-width:480px) {
+    h1 {
+        text-align: center;
+    }
+}
+
+/*** POSTER DU FILM ***/
+
+.poster_film {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster_film figure {
+    width: 33%;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid black;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width:480px) {
+    
+    .poster2,
+    .poster3 {
+        display: none;
+    }
+
+    .poster_film figure {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        border: 1px solid black;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+.poster_film img {
+    position: absolute;
+    top: -7%;
+    width: 100%;
+}
+
+
+/*** AUTEUR MATT GROENING ***/
+
+#auteur {
+    width: 25em;
+    margin: 0 auto;
+}
+
+@media only screen and (max-device-width:480px) {
+    #auteur {
+        width: 100%;
+    }
+}
+
+#auteur figure {
+    padding: 10px 55px;
+}
+
+.crop_matt {
+    /* widht 12em */
+    width: 12em;
+    height: 15em;
+    margin: 0 auto;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width:480px) {
+    .crop_matt {
+        width: 6em;
+        height: 7em;
+    }
+}
+
+#auteur img {
+    /* widht 150% */
+    width: 150%;
+    position: absolute;
+    left: -50px;
+
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width:480px) {
+    #auteur img {
+        left: -20%;
+    }
+}
+
+
+#auteur figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+#auteur dfn {
+    font-size: 0.8em;
+
+}
+
+#auteur p {
+    text-align: justify;
+    margin: 0 auto 50px auto;
+    padding: 10px;
+    font-size: 1.05em;
+}
+
+/********************FOOTER*********************/
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
